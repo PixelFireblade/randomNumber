@@ -1,2 +1,2 @@
-# whatYear
-A history checker.
+# randomNumber
+From 1 to 100000000
