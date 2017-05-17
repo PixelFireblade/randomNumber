@@ -6,7 +6,7 @@ $ ( document ).ready(function(){
     var num2 = parseInt(y);
     var randomNumber = Math.floor(Math.random() * (num2 - num1 + 1)) + num1;
     console.log(randomNumber);
-    $("p").text(randomNumber);
+    $("h2").text(randomNumber);
  })
 });
   
