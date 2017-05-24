@@ -8,13 +8,35 @@ $ ( document ).ready(function(){
     
     var randomNumber = Math.floor(Math.random() * (num2 - num1 + 1)) + num1;
     
+    if ($('#random').prop('checked', true)){
     
-    while $.inArray(randomNumber, nums){
-       var randomNumber = Math.floor(Math.random() * (num2 - num1 + 1)) + num1;
-    }
-    else {
-       nums.push(randomNumber);
-    }
+    //Deselects Opposite Verb, Adjective and Noun
+    $('#choiceVerb').prop('checked', false);
+    $('#choiceAdjective').prop('checked', false);
+    $('#choiceNoun').prop('checked', false);
+    
+    //Deselects Choice
+    $('#random').prop('checked', true);
+    $('#choiceOption').prop('checked', false);
+    
+    //Undisables Verb, Adjective and Noun
+    $('#choiceVerb').prop('disabled', true);
+    $('#choiceAdjective').prop('disabled', true);
+    $('#choiceNoun').prop('disabled', true);
+    
+    //Disables Opposite Verb, Adjective and Noun
+    $('#randomVerb').prop('disabled', false);
+    $('#randomAdjective').prop('disabled', false);
+    $('#randomNoun').prop('disabled', false);
+    
+    
+  }
+   // while jQuery.inArray(randomNumber, nums){
+   //    var randomNumber = Math.floor(Math.random() * (num2 - num1 + 1)) + num1;
+    //}
+    //else {
+  //     nums.push(randomNumber);
+   // }
    
     
     
