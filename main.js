@@ -7,11 +7,11 @@ $ ( document ).ready(function(){
     var y = $('#maximumId').val()
     
     
-    if (x.val().length > 0) {
+    if (x.length > 0) {
       var num1 = 1;
     }
     
-    else if (y.val().length > 0) {
+    else if (y.length > 0) {
       var num2 = 10000;
     }
     else {
